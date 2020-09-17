@@ -1,8 +1,19 @@
-package app.creaps.dependencyinjection;
+package app.creaps.dependencyinjection.atributos;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Coche {
+
+    @Value("VW")
     private String Marca;
+
+    @Value("1981")
     private Integer modelo;
 
+    @Autowired
     private Motor   motor;
 
     public Coche() {

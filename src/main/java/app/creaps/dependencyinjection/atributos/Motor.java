@@ -1,8 +1,14 @@
-package app.creaps.dependencyinjection;
+package app.creaps.dependencyinjection.atributos;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Motor {
+
+    @Value("x11")
     private String marca;
+    @Value("1986")
     private Integer modelo;
 
     public Motor() {
