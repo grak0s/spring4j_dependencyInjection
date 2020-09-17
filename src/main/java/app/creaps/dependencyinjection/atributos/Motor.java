@@ -11,8 +11,6 @@ public class Motor {
 
     private Integer modelo;
 
-    public Motor() {
-    }
 
     public Motor(@Value("x11") String marca,
                  @Value("1986") Integer modelo) {
